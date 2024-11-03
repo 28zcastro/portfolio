@@ -68,15 +68,25 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
     margin: 20px;
 }
 
-.dados-pessoais img {
+.dados-pessoais #fotinha {
     width: 200px;
     border-radius: 20px;
     margin-bottom: 10px;
 }
 .dados-pessoais ul li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 18px;
     list-style: none;
     text-align: left;
+}
+
+.dados-pessoais li {
+    margin-bottom: 8px;
+}
+.dados-pessoais .icones{
+    width: 30px;
 }
 
 /*----------------------------------------------------
@@ -160,6 +170,6 @@ td { border: solid 1px black; padding: 10px; }
     h2 { font-size: 35px; }
     .conteúdo-principal { margin: 0px; border-radius: 0px; }
     .barra-iphone { padding: 20px 30px; }
-    .dados-pessoais img { width: 250px; }
+    .dados-pessoais #fotinha { width: 250px; }
     .redes-sociais img { width: 50px; }
 }
