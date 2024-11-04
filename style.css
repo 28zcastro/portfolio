@@ -24,8 +24,8 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
 ------------------------------------------------------------------ */
 .conteúdo-principal {
     background-color: whitesmoke;
-    max-width: 700px;
-    margin: 50px auto 0px;
+    max-width: 800px;
+    margin: 30px auto 0px;
     border-radius: 20px 20px 0px 0px;
     padding-bottom: 50px;
     overflow: hidden; /* IMPEDE QUE OS ITENS SEJAM SUPERIOR AO BLOCO */
@@ -39,7 +39,7 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
     padding: 10px 30px;
     display: flex;
     gap: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .barra-iphone button {
     cursor: default;
@@ -83,7 +83,7 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
 }
 
 .dados-pessoais li {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 .dados-pessoais .icones {
     width: 30px;
@@ -101,7 +101,7 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
     padding: 5px; border-radius: 5px 10px;
 }
 
-.pdf-ativo { background-color: red; }
+.pdf-ativo { background-color: orangered; }
 .pdf-inativo { background-color: gray; cursor: no-drop;  }
 table { border: solid 1px black; overflow: hidden; }
 td { border: solid 1px black; padding: 10px; }
@@ -115,22 +115,18 @@ td { border: solid 1px black; padding: 10px; }
     justify-content: center;
     gap: 10px;
 }
-.projetos img{
-    width: 20px;
-    animation: engrenagem 2s linear infinite;
-}
+.projetos img { width: 20px; animation: engrenagem 2s linear infinite; }
 
 @keyframes engrenagem {
     from { transform: rotate(0deg); }
     to { transform: rotate(360deg); }
 }
 
-
 /*----------------------------------------------------
         Redes Sociais
 ------------------------------------------------------ */
 .redes-sociais {
-    margin: 40px 0px 20px;
+    margin: 10px 0px 20px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
