@@ -37,9 +37,9 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
 .barra-iphone {
     background-color: black;
     padding: 10px 30px;
-    display: flex;
+    display: flex; align-items: center;
     gap: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 30px;
 }
 .barra-iphone button {
     cursor: default;
@@ -47,6 +47,7 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
     border-radius: 20px;
     width: 15px; height: 15px;
 }
+
 #botão-01 { background-color: red; }
 #botão-02 { background-color: orange; }
 #botão-03 { background-color: green; }
@@ -54,7 +55,7 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
 /*---------------------------------------------------------------
     Texto Apresentação - Seja bem vindo ao meu portfólio!
 ------------------------------------------------------------------ */
-.texto-apresentação { margin: 0px 30px; }
+.texto-apresentação { margin: 0px 30px; margin-bottom: 50px; }
 .texto-apresentação p { font-size: 18px; text-align: justify; text-indent: 30px; } 
 
 /*---------------------------------------------------------------
@@ -65,13 +66,13 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    margin: 20px;
+    margin: 0px 20px;
+    margin-bottom: 50px;
 }
 
 .dados-pessoais #fotinha {
     width: 200px;
     border-radius: 20px;
-    margin-bottom: 10px;
 }
 .dados-pessoais ul li {
     display: flex;
@@ -83,7 +84,7 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
 }
 
 .dados-pessoais li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .dados-pessoais .icones {
     width: 30px;
@@ -93,23 +94,24 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
         Certificados
 ------------------------------------------------------ */
 
-.certificados { display: inline-block; margin: 0px auto 30px; }
+.certificados { display: inline-block; margin: 0px auto; margin-bottom: 50px; }
 .certificados a {
-     color: whitesmoke;
+    color: whitesmoke;
     font: 900 14px 'Oswald';
     text-decoration: none;
     padding: 5px; border-radius: 5px 10px;
 }
 
-.pdf-ativo { background-color: orangered; }
+.pdf-ativo { background-color: red; }
 .pdf-inativo { background-color: gray; cursor: no-drop;  }
 table { border: solid 1px black; overflow: hidden; }
-td { border: solid 1px black; padding: 10px; }
+td { border: solid 1px black; padding: 10px; text-align: justify;}
 
 /*----------------------------------------------------
         Projetos
 ------------------------------------------------------ */
-.projetos {
+.projetos {    
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -126,7 +128,7 @@ td { border: solid 1px black; padding: 10px; }
         Redes Sociais
 ------------------------------------------------------ */
 .redes-sociais {
-    margin: 10px 0px 20px;
+    margin-bottom: 50px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
@@ -134,7 +136,9 @@ td { border: solid 1px black; padding: 10px; }
     align-items: center;
 }
 .redes-sociais img { width: 50px; filter: grayscale(80%); }
-.redes-sociais img:hover { filter: grayscale(40%); }
+.redes-sociais img:hover { filter: none; }
+#img-github { filter: opacity(60%); }
+#img-github:hover { filter: none; }
 
 /*----------------------------------------------------
         Rodapé
@@ -166,6 +170,6 @@ td { border: solid 1px black; padding: 10px; }
     h2 { font-size: 35px; }
     .conteúdo-principal { margin: 0px; border-radius: 0px; }
     .barra-iphone { padding: 20px 30px; }
-    .dados-pessoais #fotinha { width: 250px; }
+    .dados-pessoais #fotinha { width: 250px; margin-bottom: 20px; }
     .redes-sociais img { width: 50px; }
 }
