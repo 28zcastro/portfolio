@@ -19,6 +19,13 @@ html {
 h1 { font: 700 40px 'Oswald'; margin-bottom: 10px; }
 h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
 
+#div-responsiva {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /*---------------------------------------------------------------
         Conteúdo Principal
 ------------------------------------------------------------------ */
@@ -27,7 +34,6 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
     max-width: 800px;
     margin: 30px auto 0px;
     border-radius: 20px 20px 0px 0px;
-    padding-bottom: 50px;
     overflow: hidden; /* IMPEDE QUE OS ITENS SEJAM SUPERIOR AO BLOCO */
 }
 
@@ -48,18 +54,18 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
     width: 15px; height: 15px;
 }
 
-#botão-01 { background-color: red; }
-#botão-02 { background-color: orange; }
-#botão-03 { background-color: green; }
+#botão-01 { background: linear-gradient( to top , whitesmoke , red , red) ; }
+#botão-02 { background: linear-gradient( to top , whitesmoke , orange , orange) ; }
+#botão-03 { background: linear-gradient( to top , whitesmoke , green , green) ; }
 
 /*---------------------------------------------------------------
-    Texto Apresentação - Seja bem vindo ao meu portfólio!
+    Título e Texto Apresentação
 ------------------------------------------------------------------ */
 .texto-apresentação { margin: 0px 30px; margin-bottom: 50px; }
 .texto-apresentação p { font-size: 18px; text-align: justify; text-indent: 30px; } 
 
 /*---------------------------------------------------------------
-    Dados Pessoais
+    Foto e Lista com Dados Pessoais
 ------------------------------------------------------------------ */
 .dados-pessoais {
     display: flex;
@@ -91,72 +97,87 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
 }
 
 /*----------------------------------------------------
-        Certificados
+        Tabela com Formação Acadêmica
 ------------------------------------------------------ */
 
-.certificados { display: inline-block; margin: 0px auto; margin-bottom: 50px; }
-.certificados a {
-    color: whitesmoke;
-    font: 900 14px 'Oswald';
-    text-decoration: none;
-    padding: 5px; border-radius: 5px 10px;
+.table-form-academica { 
+    margin-bottom: 50px; 
+}
+.table-form-academica table { 
+    margin: 0px auto;
+    border: solid 1px black; 
+    overflow: hidden; 
+}
+.table-form-academica td {
+    border: solid 1px black; 
+    padding: 10px; 
+    text-align: justify;
+}
+.table-form-academica button {
+    border: solid black 1.8px;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
 }
 
-.pdf-ativo { background-color: red; }
-.pdf-inativo { background-color: gray; cursor: no-drop;  }
-table { border: solid 1px black; overflow: hidden; }
-td { border: solid 1px black; padding: 10px; text-align: justify;}
+#button-concluido { background: linear-gradient( to top , whitesmoke , green ) ; }
+#button-em-aberto { background: linear-gradient( to top , whitesmoke , red ) ; }
 
-/*----------------------------------------------------
-        Projetos
------------------------------------------------------- */
-.projetos {    
-    margin-bottom: 10px;
+.legenda-table {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    margin-top: 8px;
 }
-.projetos img { width: 20px; animation: engrenagem 2s linear infinite; }
 
-@keyframes engrenagem {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
+.legenda-table p { 
+    margin-left: 5px;  
 }
 
 /*----------------------------------------------------
         Redes Sociais
 ------------------------------------------------------ */
 .redes-sociais {
-    margin-bottom: 50px;
+    margin-bottom: 75px;
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    gap: 20px;
+    justify-content: center;
+    
 }
-.redes-sociais img { width: 50px; filter: grayscale(80%); }
-.redes-sociais img:hover { filter: none; }
-#img-github { filter: opacity(60%); }
-#img-github:hover { filter: none; }
+.redes-sociais img { 
+    width: 60px; 
+    filter: grayscale(80%); 
+}
+.redes-sociais img:hover { 
+    filter: none; 
+}
+
+
+.img-github { /*ESTILO DEDICADO A"IMG-GITHUB.PNG" */
+    filter: opacity(60%);
+}
+.img-github:hover { /*ESTILO DEDICADO A"IMG-GITHUB.PNG" */
+    filter: none;
+}
 
 /*----------------------------------------------------
         Rodapé
 ------------------------------------------------------ */
-.rodapé {
+footer {
     position: fixed;
     bottom: 0%;
-    background-color: rgba(0, 0, 0, 0.795) ;
+    background-color: rgba(0, 0, 0, 0.80); 
     color: white;
     width: 100%;
     text-align: center;
     padding: 10px 0px;
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 20px;
+    justify-content: center;
 }
-.rodapé img {
+footer img {
     width: 40px;
     filter: grayscale(80%);
 }
@@ -171,5 +192,5 @@ td { border: solid 1px black; padding: 10px; text-align: justify;}
     .conteúdo-principal { margin: 0px; border-radius: 0px; }
     .barra-iphone { padding: 20px 30px; }
     .dados-pessoais #fotinha { width: 250px; margin-bottom: 20px; }
-    .redes-sociais img { width: 50px; }
+
 }

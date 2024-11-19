@@ -15,65 +15,82 @@
     <!-- Barra do iPhone -->
     <div class="barra-iphone"><button id="botão-01"></button><button id="botão-02"></button><button id="botão-03"></button></div>
 
-
-    <!-- Texto Apresentação - Seja bem vindo ao meu portfólio! -->
-    <div class="texto-apresentação">
+    <!-- Título e Texto Apresentação -->
+    <header class="texto-apresentação">
         <h1>Guilherme Castro</h1>
         <p>Entusiasta da tecnologia com ampla experiência em suporte técnico. Possuo habilidades sólidas em diagnóstico e resolução de problemas, além de uma forte capacidade de comunicação com usuários e equipes técnicas. Atualmente, estou me especializando nas áreas de HTML, CSS e JavaScript, com o objetivo de me tornar um desenvolvedor front-end habilidoso, combinando design atraente e desempenho eficiente.</p>
-    </div>
+    </header>
 
-    <!-- Dados Pessoais -->
+    <!-- Foto e Lista com Dados Pessoais -->
     <div class="dados-pessoais">
         <img src="img-fotinha.jpg" id="fotinha">
         <ul>
-            <li> <img src="icone-formacao.png" class="icones">Análise de Sistemas</li>
-            <li> <img src="icone-notebook.png" class="icones">Suporte Técnico - Pleno</li>
-            <li> <img src="icone-casal.png" class="icones">Casado</li>
-            <li> <img src="icone-idade.png" class="icones">22 anos</li>
-            <li> <img src="icone-local.png" class="icones">Campo Grande - MS</li>
+            <li><img class="icones" src="icone-formacao.png">Análise de Sistemas</li>
+            <li><img class="icones" src="icone-notebook.png">Suporte Técnico - Pleno</li>
+            <li><img class="icones" src="icone-casal.png">Casado</li>
+            <li><img class="icones" src="icone-idade.png">22 anos</li>
+            <li><img class="icones" src="icone-local.png">Campo Grande - MS</li>
         </ul>
     </div>
 
-    <!-- Certificados -->
-    <div class="certificados">
-        <h2>Certificações</h2>
+    <!-- Tabela com Formação Acadêmica  -->
+    <section class="table-form-academica">
+        <h2>Formação Acadêmica</h2>
         <table>
-            <tr> <!-- Linha 01 -->
+            <tr>
+                <td><button id="button-concluido"></button></td>
                  <td>Diploma Análise de Sistemas</td>
-                 <td><a target="_blank" href="Diploma - ADS.pdf" download="Diploma - ADS.pdf" class="pdf-ativo">PDF</a></td>
             </tr>
-            <tr> <!-- Linha 02 -->
+            <tr>
+                <td><button id="button-concluido"></button></td>
                 <td>CSS3 - Estilizando Páginas Web</td>
-                <td><a target="_blank" href="CSS3 - Estilizando Páginas Web com Estilo.pdf" download="CSS3 - Estilizando Páginas Web com Estilo.pdf" class="pdf-ativo">PDF</a></td>
             </tr>
-            <tr> <!-- Linha 03 -->
+            <tr>
+                <td><button id="button-concluido"></button></td>
                 <td>HTML5 e CSS3 - Módulo 1</td>
-                 <td><a target="_self" class="pdf-inativo">PDF</a></td>
             </tr>
-            <tr> <!-- Linha 04 -->
+            <tr>
+                <td><button id="button-concluido"></button></td>
                 <td>HTML5 e CSS3 - Módulo 2</td>
-                <td><a target="_self" class="pdf-inativo">PDF</a></td>
+            </tr>
+            <tr>
+                <td><button id="button-em-aberto"></button></td>
+                <td>Algoritmo - VisualG</td>
             </tr>
         </table>
-    </div>
 
-    <!-- Projetos-->
-    <div class="projetos">
-        <img src="img-engrenagem.png">
-        <p>Projetos em Desenvolvimento!</p>
-        <img src="img-engrenagem.png">
-    </div>
+        <!-- Legenda da Tabela -->
+        <div class="legenda-table">
+            <button id="button-concluido"></button>
+            <p style="margin-right: 15px;">Concluído</p> 
+            <button id="button-em-aberto"></button>
+            <p>Cursando</p>
+        </div>
+    </section>
+
+
+
+    <!--  
+
+    INCLUIR
+    NOVOS 
+    CÓDIGOS 
+    ACIMA 
+    DESTE 
+    COMENTÁRIO
+
+    -->
 
     <!-- Redes Sociais -->
      <div class="redes-sociais">
         <a target="_blank" href="https://api.whatsapp.com/send?phone=67981258825"><img src="img-whatsapp.png"></a>
         <a target="_blank" href="http://www.linkedin.com/in/28zcastro"><img src="img-linkedin.png"></a>
-        <a id="img-github" target="_blank" href="https://github.com/28zcastro"><img src="img-github.png"></a>
+        <a class="img-github" target="_blank" href="https://github.com/28zcastro"><img src="img-github.png"></a>
     </div>
 </main>
 
 <!-- Rodapé -->
-<footer class="rodapé" title="Consagre ao Senhor tudo o que você faz, e os seus planos serão bem-sucedidos.">
+<footer>
     <img src="img-bandeira-brasil.png">
     <p>Provérbios 16:3</p>
 </footer>
