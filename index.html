@@ -10,13 +10,10 @@
 <body>
 
 <!-- Conteúdo Principal -->
-<main class="conteúdo-principal">
+<main>
 
-    <!-- Barra do iPhone -->
-    <div class="barra-iphone"><button id="botão-01"></button><button id="botão-02"></button><button id="botão-03"></button></div>
-
-    <!-- Título e Texto Apresentação -->
-    <header class="texto-apresentação">
+    <!-- Cabeçalho -->
+    <header>
         <h1>Guilherme Castro</h1>
         <p>Entusiasta da tecnologia com ampla experiência em suporte técnico. Possuo habilidades sólidas em diagnóstico e resolução de problemas, além de uma forte capacidade de comunicação com usuários e equipes técnicas. Atualmente, estou me especializando nas áreas de HTML, CSS e JavaScript, com o objetivo de me tornar um desenvolvedor front-end habilidoso, combinando design atraente e desempenho eficiente.</p>
     </header>
@@ -33,53 +30,86 @@
         </ul>
     </div>
 
-    <!-- Tabela com Formação Acadêmica  -->
-    <section class="table-form-academica">
-        <h2>Formação Acadêmica</h2>
-        <table>
-            <tr>
-                <td><button id="button-concluido"></button></td>
-                 <td>Diploma Análise de Sistemas</td>
-            </tr>
-            <tr>
-                <td><button id="button-concluido"></button></td>
-                <td>CSS3 - Estilizando Páginas Web</td>
-            </tr>
-            <tr>
-                <td><button id="button-concluido"></button></td>
-                <td>HTML5 e CSS3 - Módulo 1</td>
-            </tr>
-            <tr>
-                <td><button id="button-concluido"></button></td>
-                <td>HTML5 e CSS3 - Módulo 2</td>
-            </tr>
-            <tr>
-                <td><button id="button-em-aberto"></button></td>
-                <td>Algoritmo - VisualG</td>
-            </tr>
+    <!-- Tabela 
+     
+    Caption
+    THead
+    TBody
+    TFoot
+
+    TR -> Linha
+        TH -> Título
+            TD -> Dado
+    
+    TH com Scope = "col" -> Significa que o TD está abaixo.
+    TH com Scope = "row" -> Significa que o TD está ao lado.
+
+    TD com colspan="nº" -> Agrupa com a conteúdo a direita.
+    TD com rowspan="nº" -> Agrupa com a conteúdo abaixo.
+    -->
+    <section>
+        <table class="tabela-formacao">
+            <caption>FORMAÇÃO ACADÊMICA</caption>
+            <tbody>
+                <tr> <!-- Linha 01 -->
+                    <td><button id="button-verde"></button></td>
+                    <td scope="col">Diploma Análise de Sistemas</td>
+                </tr>
+                <tr> <!-- Linha 02 -->
+                    <td><button id="button-verde"></button></td>
+                    <td>CSS3 - Estilizando Páginas Web</td>
+                </tr>
+                <tr> <!-- Linha 03 -->
+                    <td><button id="button-verde"></button></td>
+                    <td>HTML5 e CSS3 - Módulo I</td>
+                </tr>
+                <tr> <!-- Linha 04 -->
+                    <td><button id="button-verde"></button></td>
+                    <td>HTML5 e CSS3 - Módulo II</td>
+                </tr>
+                <tr> <!-- Linha 05 -->
+                    <td><button id="button-cinza"></button></td>
+                    <td>HTML5 e CSS3 - Módulo III</td>
+                </tr>
+                <tr> <!-- Linha 06 -->
+                    <td><button id="button-cinza"></button></td>
+                    <td>Algoritmo - VisualG</td>
+                </tr>
+            </tbody>
         </table>
 
         <!-- Legenda da Tabela -->
         <div class="legenda-table">
-            <button id="button-concluido"></button>
+            <button id="button-verde"></button>
             <p style="margin-right: 15px;">Concluído</p> 
-            <button id="button-em-aberto"></button>
+            <button id="button-cinza"></button>
             <p>Cursando</p>
         </div>
     </section>
 
+    <!--  
+    INCLUIR
+    NOVOS 
+    CÓDIGOS 
+    ABAIXO 
+    DESTE 
+    COMENTÁRIO
+    -->
+
 
 
     <!--  
-
     INCLUIR
     NOVOS 
     CÓDIGOS 
     ACIMA 
     DESTE 
     COMENTÁRIO
-
     -->
+
+    <br>
+    <hr> <!-- Linha Divisória -->
+    <br>
 
     <!-- Redes Sociais -->
      <div class="redes-sociais">

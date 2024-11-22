@@ -4,65 +4,40 @@
         Estilo Global
 ------------------------------------------------------------------ */
 * {
-    font-family: "tahoma", sans-serif;
+    font: 400 18px 'Tahoma';
     margin: 0; 
     padding: 0;
-    font-size: 17px;
     text-align: center;
 }
 
 html {
+    min-height: 100vh ;
     background: linear-gradient( to top , gray , whitesmoke) ;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat ;
+    background-attachment: fixed ;
 }
 
-h1 { font: 700 40px 'Oswald'; margin-bottom: 10px; }
+
 h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
-
-#div-responsiva {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
 
 /*---------------------------------------------------------------
         Conteúdo Principal
 ------------------------------------------------------------------ */
-.conteúdo-principal {
+main {
     background-color: whitesmoke;
     max-width: 800px;
-    margin: 30px auto 0px;
+    margin: 0px auto;
     border-radius: 20px 20px 0px 0px;
     overflow: hidden; /* IMPEDE QUE OS ITENS SEJAM SUPERIOR AO BLOCO */
 }
 
 /*---------------------------------------------------------------
-        Barra do Iphone
+    Cabeçalho
 ------------------------------------------------------------------ */
-.barra-iphone {
-    background-color: black;
-    padding: 10px 30px;
-    display: flex; align-items: center;
-    gap: 5px;
-    margin-bottom: 30px;
-}
-.barra-iphone button {
-    cursor: default;
-    border: none;
-    border-radius: 20px;
-    width: 15px; height: 15px;
-}
-
-#botão-01 { background: linear-gradient( to top , whitesmoke , red , red) ; }
-#botão-02 { background: linear-gradient( to top , whitesmoke , orange , orange) ; }
-#botão-03 { background: linear-gradient( to top , whitesmoke , green , green) ; }
-
-/*---------------------------------------------------------------
-    Título e Texto Apresentação
------------------------------------------------------------------- */
-.texto-apresentação { margin: 0px 30px; margin-bottom: 50px; }
-.texto-apresentação p { font-size: 18px; text-align: justify; text-indent: 30px; } 
+header { margin: 0px 30px; margin-bottom: 50px; }
+header > h1 { font: 700 60px 'Oswald'; margin: 30px 0px; }
+header > p { text-align: justify; text-indent: 30px; } 
 
 /*---------------------------------------------------------------
     Foto e Lista com Dados Pessoais
@@ -89,39 +64,48 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
     text-align: left;
 }
 
-.dados-pessoais li {
-    margin-bottom: 10px;
-}
-.dados-pessoais .icones {
-    width: 30px;
-}
+.dados-pessoais li { margin-bottom: 10px; }
+.dados-pessoais .icones { width: 30px; }
 
 /*----------------------------------------------------
-        Tabela com Formação Acadêmica
+        Tabela 
 ------------------------------------------------------ */
 
-.table-form-academica { 
-    margin-bottom: 50px; 
-}
-.table-form-academica table { 
+table { 
     margin: 0px auto;
     border: solid 1px black; 
-    overflow: hidden; 
+    border-collapse: collapse;
+    overflow: hidden;
 }
-.table-form-academica td {
-    border: solid 1px black; 
-    padding: 10px; 
+
+caption {
+    background-color: black;
+    color: whitesmoke;
+    padding: 10px;
+    font-weight: 900;
+    border-radius: 10px 10px 0px 0px;
+}
+
+tr:nth-child(odd) { background-color: #fff2e1; } /** Efeito Zebra **/
+
+td {
+    height: 40px;
+    vertical-align: middle;
+    padding: 0px 10px;
+    border: solid 1px black;  
     text-align: justify;
+    font-weight: 400;
 }
-.table-form-academica button {
+
+button {
     border: solid black 1.8px;
     width: 15px;
     height: 15px;
     border-radius: 2px;
 }
 
-#button-concluido { background: linear-gradient( to top , whitesmoke , green ) ; }
-#button-em-aberto { background: linear-gradient( to top , whitesmoke , red ) ; }
+#button-verde { background: linear-gradient( to top , whitesmoke , green ) ; }
+#button-cinza { background: linear-gradient( to top , whitesmoke , gray ) ; }
 
 .legenda-table {
     display: flex;
@@ -130,9 +114,7 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
     margin-top: 8px;
 }
 
-.legenda-table p { 
-    margin-left: 5px;  
-}
+.legenda-table p { margin-left: 5px; }
 
 /*----------------------------------------------------
         Redes Sociais
@@ -152,7 +134,6 @@ h2 { font: 700 35px 'Oswald'; margin-bottom: 10px; }
 .redes-sociais img:hover { 
     filter: none; 
 }
-
 
 .img-github { /*ESTILO DEDICADO A"IMG-GITHUB.PNG" */
     filter: opacity(60%);
@@ -187,10 +168,10 @@ footer img {
 ------------------------------------------------------------------ */
 
 @media ( max-width: 720px ) {
-    h1 { font-size: 38px; }
+    header > h1 { font-size: 45px; }
     h2 { font-size: 35px; }
-    .conteúdo-principal { margin: 0px; border-radius: 0px; }
-    .barra-iphone { padding: 20px 30px; }
+    main { margin: 0px; border-radius: 0px; }
+
     .dados-pessoais #fotinha { width: 250px; margin-bottom: 20px; }
 
 }
